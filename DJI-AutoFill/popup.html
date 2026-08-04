@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DJI AutoFill</title>
+  <style>
+    body {
+      width: 330px;
+      margin: 0;
+      padding: 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #111827;
+      background: #f9fafb;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    p {
+      margin: 0 0 12px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 8px;
+      padding: 11px 12px;
+      background: #2563eb;
+      color: white;
+      font: inherit;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: .6;
+      cursor: wait;
+    }
+    #status {
+      min-height: 48px;
+      margin-top: 12px;
+      color: #1d4ed8;
+      line-height: 1.45;
+      white-space: pre-wrap;
+    }
+    code {
+      color: #111827;
+    }
+  </style>
+</head>
+<body>
+  <h1>DJI 自动填写</h1>
+  <p>
+    机型：御 Mavic Pro<br>
+    SN：<code>08QUE5A00100MA</code><br>
+    方案：DJI Mavic 4 Pro 512GB 创作者套装（DJI RC Pro 2，增强图传）翻新机<br>
+    姓名：李怡德<br>
+    地区：广东省 / 中山市 / 五桂山街道
+  </p>
+  <button id="run">自动填写全部信息</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
